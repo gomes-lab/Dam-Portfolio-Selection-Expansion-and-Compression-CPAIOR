@@ -6,7 +6,8 @@ We have the dam and river information of the full Amazon basin and four its subb
 
 # Usage:
 	1. Firstly, run `make Amazon_lp` to compile the C++ code.
-	2. ./Amazon_lp -lp -epsilon [APPROXIMATION_FACTOR] -path [YOUR_INPUT_FILE_PATH] -criteria INum cri_1 cri_2 cri_{INum - 1} cri_{INum} -w ENum n1 w1 ... w_{n1}  n_{ENum} w1 ... w_{n_{ENum}} where INum refers to the number of criteria you implicitly consider and ENum refers to the number of criteria you explicitly consider minus one. Here we minus one because the first criteria has to be the energy.
+	2. ./Amazon_lp -lp -epsilon [APPROXIMATION_FACTOR] -path [YOUR_INPUT_FILE_PATH] -criteria INum cri_1 cri_2 cri_{INum - 1} cri_{INum} -w ENum n1 w1 ... w_{n1}  n_{ENum} w1 ... w_{n_{ENum}} 
+where INum refers to the number of criteria you implicitly consider and ENum refers to the number of criteria you explicitly consider minus one. Here we minus one because the first criteria has to be the energy.
 
 We are sorry that the input format is a little bit confusing. Here is an example for you understanding. Assume we want to implicitly consider criteria c1, c2, c3. And we want to explicitly consider two criteria and compress c2 and c3 into one criterion with weights 0.5 and 0.5. Then the command should be:
 
